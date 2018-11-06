@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+springbootwebfluxjjwt:
+  jjwt:
+    secret: mysecret
+    expiration: 28800
+  password:
+    encoder:
+      secret: mysecret
+      iteration: 33
+      keylength: 256
+
+logging:
+  level:
+    org.springframework: DEBUG
